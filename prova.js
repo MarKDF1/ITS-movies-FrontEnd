@@ -105,3 +105,14 @@ submitButton.addEventListener('click', () => {
   document.querySelectorAll('input[name="rating"]').forEach(input => (input.checked = false));
   commentArea.value = '';
 });
+async function fetchShows() {
+  try {
+    const response = await fetch(`${API_BASE}/shows`);
+    if (!response.ok) throw new Error('Errore nel caricamento degli show');
+    const shows = await response.json();
+    return shows;
+  } catch (error) {
+    console.error('Errore durant)e il caricamento degli show:', error);
+    return [];
+  }
+}
