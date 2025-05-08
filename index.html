@@ -1,25 +1,41 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valutazione Film</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Show Search</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Valutazione Film</h1>
-    <form>
-        <label for="film-select">Seleziona un film:</label>
-        <select id="film-select">
-            <option value="">-- Scegli un film --</option>
-            <option value="film1">Il Padrino</option>
-            <option value="film2">Forrest Gutt</option>
-            <option value="film3">Il Signore degli Anelli</option>
-            <option value="film4">Inception</option>
-            <option value="film5">Pulp Fiction</option>
-        </select>
-        <br>
-        <label for="media-upload">Carica un'immagine o un video:</label>
-        <input type="file" id="media-upload" accept="image/*, video/*">
-    </form>
+    <header>
+        <h1>TV Show Search</h1>
+        <input type="text" id="movie-search" placeholder="Cerca uno show..." />
+    </header>
+
+    <main>
+        <ul id="search-results" style="list-style:none;"></ul>
+        <section id="movie-detail" style="display:none;">
+            <h2 id="movie-title"></h2>
+            <img id="movie-poster" src="placeholder.jpg" alt="No image" style="max-width:100%; border-radius:5px; margin: 10px 0;" />
+            <form id="review-form">
+                <fieldset>
+                    <legend>Valutazione</legend>
+                    <label><input type="radio" name="rating" value="1"> 1 Stella</label>
+                    <label><input type="radio" name="rating" value="2"> 2 Stelle</label>
+                    <label><input type="radio" name="rating" value="3"> 3 Stelle</label>
+                    <label><input type="radio" name="rating" value="4"> 4 Stelle</label>
+                    <label><input type="radio" name="rating" value="5"> 5 Stelle</label>
+                </fieldset>
+                <textarea id="review-comment" placeholder="Scrivi un commento..."></textarea>
+                <button type="button" id="submit-review">Invia Recensione</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MovieReviews</p>
+    </footer>
+
+    <script src="prova.js"></script>
 </body>
 </html>
