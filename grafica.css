@@ -1,77 +1,77 @@
-/* Reset di base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Stile generale del corpo */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-    padding: 10px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-/* Header del sito */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-header h1 {
-    font-size: 2.5rem;
+header input {
+  width: 80%;
+  padding: 0.5rem;
+  margin-top: 1rem;
 }
 
-/* Stile per container principali */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 20px;
+main {
+  padding: 1rem;
 }
 
-/* Recensioni di film */
-.movie-review {
-    background: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+#search-results {
+  list-style: none;
+  padding: 0;
 }
 
-.movie-review h2 {
-    color: #333;
-    font-size: 1.5rem;
+#search-results li {
+  background: white;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  cursor: pointer;
 }
 
-.movie-review p {
-    margin: 10px 0;
+#search-results li:hover {
+  background: #f0f0f0;
 }
 
-/* Pulsanti */
-button {
-    background: #ff6b6b;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+#movie-detail {
+  margin-top: 1rem;
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ddd;
 }
 
-button:hover {
-    background: #ff4c4c;
+#movie-poster {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
 }
 
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 20px;
-    margin-top: 20px;
+#review-form {
+  margin-top: 1rem;
+}
+
+#review-form textarea {
+  width: 100%;
+  height: 100px;
+  margin-top: 0.5rem;
+}
+
+#review-form button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#review-form button:hover {
+  background-color: #555;
 }
